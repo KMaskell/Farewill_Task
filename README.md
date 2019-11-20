@@ -1,32 +1,38 @@
 ### Kat's Notes
 I really enjoyed this challenge and to be honest it did take me a bit longer than the suggested 3 hrs. Lost track of time and was keen to get it working correctly and passing all tests!
 
-I used Ruby because this is the primary language taught at Makers Academy and which I've been using primarily for the past few months. If I had more time I'd love to tackle this challenge in JavaScript to hone my JS skills. Infact, I think I'll do this next to hone my JS and keep my Github green! JS is definately a language I'd like to become an expert in. It's such a powerful language and it's super exciting knowing what it can do e.g. provide interactivity/ dynamic pages.
+I used Ruby because this is the primary language taught at Makers Academy and which I've been using primarily for the past few months. If I had more time I'd love to tackle this challenge in JavaScript to hone my JS skills. Infact, I think I'll do this next to hone my JS and keep my Github green! JS is definitely a language I'd like to become an expert in. It's such a powerful language and it's super exciting knowing what it can do e.g. provide interactivity/ dynamic pages.
 
 Clause one and two were simple string returns. I used string interpolation for clause 3. This felt like the best way to return the string with the variable beneficiary and gift values.
 
 Returning multiple beneficiaries for a gift is where it started to get a bit tricky for me, but I solved this using the brilliant .map method to iterate over the beneficiaries array of hashes.
 
-### Kat's Program Notes
+### Kat's Specific Gifts Program Notes
+- Here's how I set up:
+  * opened a new folder, then from Terminal:
+  * create Gemfile `$ bundle init`
+  * add **RSpec** dependency to Gemfile `gem 'rspec'`
+  * install gems `$ bundle install`
+  * initialize **RSpec**  `$ rspec --init`
 - Linted with Rubocop
-- To run RSpec test framework, run the following command from root file in terminal: rspec
-- Can be tested from IRB: 
-  * run command from lib file in terminal: irb
-  * require main file: require './specific_gifts.rb'
-  * declare the index and gifts_array parameters, eg:
-    index = 5
-    gift_array_simple = [
-  {
-    name: 'Crocs',
-    beneficiaries: [
-      {
-        name: 'Daniel Garrett',
-        identifier: 'dan@farewill.com'
-      }
-    ]
-  }
-]
-  * Call the function with the given parameters e.g.: specific_gifts(index, gift_array_simple)
+- To run **RSpec** test framework (from root file) `$rspec`
+- Can be tested using **irb** form Terminal:
+  *  `$ irb`
+  * require main file `$ require './specific_gifts.rb'`
+  * declare start_index no. and gifts_array parameters, eg:
+    `$ index = 5`  
+    `$ gift_array_simple = [  
+  {  
+    name: 'Crocs',  
+    beneficiaries: [  
+      {  
+        name: 'Daniel Garrett',  
+        identifier: 'dan@farewill.com'  
+      }  
+    ]  
+  }  
+]`  
+  * Call the function with the given parameters `$ specific_gifts(index, gift_array_simple)`
     
       
 ## Farewill code task: Construct the 'specific gifts' section of a will  
