@@ -48,3 +48,26 @@ describe 'with a non-capitalised name' do
     expect(specific_gifts(index, gift_array_non_capitalised)[2]).to eq([3, "I give to Daniel Garrett of dan@farewill.com my 'Crocs'."])
   end
 end
+
+describe 'with a different start index' do
+  big_index = 11
+  very_big_index = 212
+  gift_array_simple = [
+    {
+      name: 'Crocs',
+      beneficiaries: [
+        {
+          name: 'Daniel Garrett',
+          identifier: 'dan@farewill.com'
+        }
+      ]
+    }
+  ]
+
+  it 'returns the correct indexes for a larger given start index' do
+    expect(specific_gifts(big_index, gift_array_simple)[0][0]).to eq(11)
+    expect(specific_gifts(big_index, gift_array_simple)[2][0]).to eq(13)
+    expect(specific_gifts(very_big_index, gift_array_simple)[0][0]).to eq(212)
+    expect(specific_gifts(very_big_index, gift_array_simple)[2][0]).to eq(214)
+  end
+end
