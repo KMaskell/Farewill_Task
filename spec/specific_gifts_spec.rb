@@ -112,3 +112,39 @@ describe 'with multiple beneficiaries for a gift' do
     expect(specific_gifts(index, gift_array_multiple_beneficiaries)[2]).to eq([3, expected_string])
   end
 end
+
+describe 'with multiple gifts' do
+  index = 1
+  gift_array_multiple_gifts = [
+    {
+      name: 'Watch',
+      beneficiaries: [
+        {
+          name: 'Zac Colley',
+          identifier: 'zac@farewill.com'
+        },
+        {
+          name: 'Helena Thompson',
+          identifier: 'helena@farewill.com'
+        },
+        {
+          name: 'Tom Rogers',
+          identifier: 'tom@farewill.com'
+        }
+      ]
+    },
+    {
+      name: 'Shorts',
+      beneficiaries: [
+        {
+          name: 'Jacob Pargin',
+          identifier: 'jacob.pargin@farewill.com'
+        }
+      ]
+    }
+  ]
+  expected_string = "I give to Zac Colley of zac@farewill.com and Helena Thompson of helena@farewill.com and Tom Rogers of tom@farewill.com my 'Watch'. I give to Jacob Pargin of jacob.pargin@farewill.com my 'Shorts'."
+  it 'returns a single string for the third clause describing all of the specific gifts' do
+    expect(specific_gifts(index, gift_array_multiple_gifts)[2]).to eq([3, expected_string])
+  end
+end

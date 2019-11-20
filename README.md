@@ -1,20 +1,46 @@
-## Program notes
+**If you're using another programming language**  
+1. Work on your code until you're happy
+    * The tests in js/main.test.js help to clarify the requirements.
+    * You don't have to write tests, but you're welcome to do so.
+2. When you've finished, upload your code as a secret gist
+3. Include clear instructions on how to run your code.
+4. Email us the link to your gist, with your notes on your thoughts and reasoning behind the decisions you made.
+
+**Things you may wish to cover in your notes:**  
+* What went well?  
+* What could have gone better?  
+* Is there anything particular you'd like to come back and improve if you had time? Why?  
+
+
+### Kat's Notes
+I really enjoyed this challenge and to be honest it did take me a bit longer than the suggested 3 hrs. Lost track of time and was keen to get it working correctly and passing all tests!
+
+I used Ruby because this is the primary language taught at Makers Academy and which I've been using primarily for the past few months. If I had more time I'd love to tackle this challenge in JavaScript to hone my JS skills. Infact, I think I'll do this next to hone my JS and keep my Github green! JS is definately a language I'd like to become an expert in. It's such a powerful language and it's super exciting knowing what it can do e.g. provide interactivity/ dynamic pages.
+
+Clause one and two were simple string returns. I used string interpolation for clause 3. This felt like the best way to return the string with the variable beneficiary and gift values.
+
+Returning multiple beneficiaries for a gift is where it started to get a bit tricky for me, but I solved this using the brilliant .map method to iterate over the beneficiaries array of hashes.
+
+### Kat's Program Notes
 - Linted with Rubocop
 - To run RSpec test framework, run the following command from root file in terminal: rspec
 - Can be tested from IRB: 
-  * run irb from lib file in terminal: irb
+  * run command from lib file in terminal: irb
   * require main file: require './specific_gifts.rb'
-  * call function with parameters e.g.: specific_gifts(1, [
-    {
-      name: 'Crocs',
-      beneficiaries: [
-        {
-          name: 'Daniel Garrett',
-          identifier: 'dan@farewill.com'
-        }
-      ]
-    }
-  ])
+  * declare the index and gifts_array parameters, eg:
+    index = 5
+    gift_array_simple = [
+  {
+    name: 'Crocs',
+    beneficiaries: [
+      {
+        name: 'Daniel Garrett',
+        identifier: 'dan@farewill.com'
+      }
+    ]
+  }
+]
+  * Call the function with the given parameters e.g.: specific_gifts(index, gift_array_simple)
     
       
 ## Farewill code task: Construct the 'specific gifts' section of a will  
@@ -124,22 +150,3 @@ I give to Helena Thompson of helena@farewill.com my 'Laptop'. I give to Daniel G
 4. Email us that link with your notes on your thoughts and reasoning behind the decisions you made.
 
 *If you don't want to use Glitch, just follow the "If you're using another programming language" steps below instead!*
-
-**If you're using another programming language**  
-1. Work on your code until you're happy
-    * The tests in js/main.test.js help to clarify the requirements.
-    * You don't have to write tests, but you're welcome to do so.
-2. When you've finished, upload your code as a secret gist
-3. Include clear instructions on how to run your code.
-4. Email us the link to your gist, with your notes on your thoughts and reasoning behind the decisions you made.
-
-**Things you may wish to cover in your notes:**  
-* What went well?  
-* What could have gone better?  
-* Is there anything particular you'd like to come back and improve if you had time? Why?  
-
-I used Ruby to complete this challenge because this is the primary language taught at Makers Academy the past few months, and therefore my current strength. If I had more time I'd love to tackle this challenge in JavaScript to hone my JS skills. Infact, I think I'll do this next to hone my JS and keep my Github green!
-
-I used string interpolation for clause 3. This felt like the best way to return the string with variable beneficiary and gift values.
-
-Returning multiple beneficiaries for a gift is where it started to get tricky for me, but I solved this using the brilliant .map method to iterate over the beneficiaries array of hashes.
