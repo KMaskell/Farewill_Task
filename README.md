@@ -1,17 +1,3 @@
-**If you're using another programming language**  
-1. Work on your code until you're happy
-    * The tests in js/main.test.js help to clarify the requirements.
-    * You don't have to write tests, but you're welcome to do so.
-2. When you've finished, upload your code as a secret gist
-3. Include clear instructions on how to run your code.
-4. Email us the link to your gist, with your notes on your thoughts and reasoning behind the decisions you made.
-
-**Things you may wish to cover in your notes:**  
-* What went well?  
-* What could have gone better?  
-* Is there anything particular you'd like to come back and improve if you had time? Why?  
-
-
 ### Kat's Notes
 I really enjoyed this challenge and to be honest it did take me a bit longer than the suggested 3 hrs. Lost track of time and was keen to get it working correctly and passing all tests!
 
@@ -150,3 +136,16 @@ I give to Helena Thompson of helena@farewill.com my 'Laptop'. I give to Daniel G
 4. Email us that link with your notes on your thoughts and reasoning behind the decisions you made.
 
 *If you don't want to use Glitch, just follow the "If you're using another programming language" steps below instead!*
+
+**If you're using another programming language**  
+1. Work on your code until you're happy
+    * The tests in js/main.test.js help to clarify the requirements.
+    * You don't have to write tests, but you're welcome to do so.
+2. When you've finished, upload your code as a secret gist
+3. Include clear instructions on how to run your code.
+4. Email us the link to your gist, with your notes on your thoughts and reasoning behind the decisions you made.
+
+**Things you may wish to cover in your notes:**  
+* What went well?  
+* What could have gone better?  
+* Is there anything particular you'd like to come back and improve if you had time? Why? 
