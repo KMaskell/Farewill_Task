@@ -1,6 +1,6 @@
 ## Program notes
 - Linted with Rubocop
-- RSpec testing framework, run 'rspec' command from root file in terminal
+- To run RSpec test framework, run the following command from root file in terminal: rspec
 - Can be tested from IRB: 
   * run irb from lib file in terminal: irb
   * require main file: require './specific_gifts.rb'
@@ -137,3 +137,7 @@ I give to Helena Thompson of helena@farewill.com my 'Laptop'. I give to Daniel G
 * What went well?  
 * What could have gone better?  
 * Is there anything particular you'd like to come back and improve if you had time? Why?  
+
+I used Ruby to complete this challenge because this is the primary language taught at Makers Academy the past few months, and therefore my current strength. If I had more time I'd love to tackle this challenge in JavaScript to hone my JS skills. Infact, I think I'll do this next to hone my JS and keep my Github green!
+
+I used string interpolation for clause 3. This felt like the best way to return the string with variable beneficiary and gift values.

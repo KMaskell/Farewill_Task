@@ -29,3 +29,22 @@ describe 'with a single gift for a single beneficiary' do
     expect(specific_gifts(index, gift_array_simple)[2]).to eq([3, "I give to Daniel Garrett of dan@farewill.com my 'Crocs'."])
   end
 end
+
+describe 'with a non-capitalised name' do
+  index = 1
+  gift_array_non_capitalised = [
+    {
+      name: 'Crocs',
+      beneficiaries: [
+        {
+          name: 'daniel garrett',
+          identifier: 'dan@farewill.com'
+        }
+      ]
+    }
+  ]
+
+  it 'returns the name capitalised in the specific gifts string' do
+    expect(specific_gifts(index, gift_array_non_capitalised)[2]).to eq([3, "I give to Daniel Garrett of dan@farewill.com my 'Crocs'."])
+  end
+end
