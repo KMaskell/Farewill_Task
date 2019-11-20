@@ -71,3 +71,12 @@ describe 'with a different start index' do
     expect(specific_gifts(very_big_index, gift_array_simple)[2][0]).to eq(214)
   end
 end
+
+describe 'when given no specific gift data' do
+  index = 1
+  gift_array_empty = []
+
+  it 'returns an empty array if there are no gifts' do
+    expect(specific_gifts(index, gift_array_empty).length).to eq(0)
+  end
+end
