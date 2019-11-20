@@ -5,5 +5,7 @@ def specific_gifts(start_index, gifts_array)
 
   clause_two = 'Any item that fails to pass to a beneficiary will return to my estate to be included in the residue of my estate.'
 
-  [[start_index, clause_one], [start_index + 1, clause_two]]
+  clause_three = 'I give to ' + gifts_array[0][:beneficiaries][0][:name] + ' of ' + gifts_array[0][:beneficiaries][0][:identifier] + " my '" + gifts_array[0][:name] + "'."
+
+  [[start_index, clause_one], [start_index + 1, clause_two], [start_index + 2, clause_three]]
 end
