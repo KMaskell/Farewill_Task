@@ -7,7 +7,9 @@ def specific_gifts(start_index, gifts_array)
 
   clause_two = 'Any item that fails to pass to a beneficiary will return to my estate to be included in the residue of my estate.'
 
-  clause_three = 'I give to ' + gifts_array[0][:beneficiaries][0][:name].split.map(&:capitalize).join(' ') + ' of ' + gifts_array[0][:beneficiaries][0][:identifier] + " my '" + gifts_array[0][:name] + "'."
+  new_gift_array = gifts_array[0][:beneficiaries]
+
+  clause_three = 'I give to ' + new_gift_array.map { |beneficiary| "#{beneficiary[:name].split.map(&:capitalize).join(' ')} of #{beneficiary[:identifier]}" }.join(' and ') + " my '" + gifts_array[0][:name] + "'."
 
   [[start_index, clause_one], [start_index + 1, clause_two], [start_index + 2, clause_three]]
 end

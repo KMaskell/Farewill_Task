@@ -80,3 +80,35 @@ describe 'when given no specific gift data' do
     expect(specific_gifts(index, gift_array_empty).length).to eq(0)
   end
 end
+
+describe 'with multiple beneficiaries for a gift' do
+  index = 1
+  gift_array_multiple_beneficiaries = [
+    {
+      name: 'Watch',
+      beneficiaries: [
+        {
+          name: 'Zac Colley',
+          identifier: 'zac@farewill.com'
+        },
+        {
+          name: 'Helena Thompson',
+          identifier: 'helena@farewill.com'
+        },
+        {
+          name: 'Tom Rogers',
+          identifier: 'tom@farewill.com'
+        },
+        {
+          name: 'Kat Maskell',
+          identifier: 'kat@farewill.com'
+        }
+      ]
+    }
+  ]
+  expected_string = "I give to Zac Colley of zac@farewill.com and Helena Thompson of helena@farewill.com and Tom Rogers of tom@farewill.com and Kat Maskell of kat@farewill.com my 'Watch'."
+
+  it "returns an 'and' seperated list in the gift text for multiple beneficiaries" do
+    expect(specific_gifts(index, gift_array_multiple_beneficiaries)[2]).to eq([3, expected_string])
+  end
+end

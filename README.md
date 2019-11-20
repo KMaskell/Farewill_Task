@@ -141,3 +141,5 @@ I give to Helena Thompson of helena@farewill.com my 'Laptop'. I give to Daniel G
 I used Ruby to complete this challenge because this is the primary language taught at Makers Academy the past few months, and therefore my current strength. If I had more time I'd love to tackle this challenge in JavaScript to hone my JS skills. Infact, I think I'll do this next to hone my JS and keep my Github green!
 
 I used string interpolation for clause 3. This felt like the best way to return the string with variable beneficiary and gift values.
+
+Returning multiple beneficiaries for a gift is where it started to get tricky for me, but I solved this using the brilliant .map method to iterate over the beneficiaries array of hashes.
