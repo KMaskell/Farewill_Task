@@ -51,7 +51,8 @@ Like any clause in a will, each of the three clauses is numbered in ascending or
 
 **An example of the end output of the 'specific gifts' section:**  
 
-```12  The specific gifts given by this Will shall be paid free of
+```
+12  The specific gifts given by this Will shall be paid free of
     inheritance tax and other taxes or duties payable as a result
     of my death and the cost of delivering any gift to a beneficiary
     or vesting it in them shall be an executorship expense as shall
